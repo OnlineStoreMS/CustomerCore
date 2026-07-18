@@ -1,0 +1,19 @@
+server:
+  port: 8096
+  mode: debug
+
+database:
+  driver: postgres
+  # 本地开发建议 host=127.0.0.1；部署由 deploy/scripts/sync-configs.sh 写入
+  postgres_dsn: "host=127.0.0.1 user=customercore password=YOUR_PASSWORD dbname=customercore port=5432 sslmode=disable TimeZone=Asia/Shanghai"
+
+auth:
+  enabled: true
+  jwt_secret: "与 UserCore 一致"
+
+cors:
+  allow_origins:
+    - "http://localhost:5181"
+    - "http://127.0.0.1:5181"
+    - "http://localhost:5174"
+    - "http://127.0.0.1:5174"
