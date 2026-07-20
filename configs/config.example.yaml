@@ -1,5 +1,5 @@
 server:
-  port: 8096
+  port: 8099
   mode: debug
 
 database:
@@ -13,7 +13,7 @@ auth:
 
 cors:
   allow_origins:
-    - "http://localhost:5181"
-    - "http://127.0.0.1:5181"
+    - "http://localhost:5183"
+    - "http://127.0.0.1:5183"
     - "http://localhost:5174"
     - "http://127.0.0.1:5174"

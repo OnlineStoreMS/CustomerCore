@@ -47,7 +47,7 @@ func Load(path string) (*Config, error) {
 		return nil, fmt.Errorf("unmarshal config: %w", err)
 	}
 	if cfg.Server.Port == 0 {
-		cfg.Server.Port = 8096
+		cfg.Server.Port = 8099
 	}
 	if cfg.Database.Driver == "" {
 		cfg.Database.Driver = "postgres"
@@ -60,8 +60,8 @@ func Load(path string) (*Config, error) {
 	}
 	if len(cfg.CORS.AllowOrigins) == 0 {
 		cfg.CORS.AllowOrigins = []string{
-			"http://localhost:5181",
-			"http://127.0.0.1:5181",
+			"http://localhost:5183",
+			"http://127.0.0.1:5183",
 			"http://localhost:5174",
 			"http://127.0.0.1:5174",
 		}

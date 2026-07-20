@@ -5,10 +5,11 @@ OSMS 平台客户底库：客户档案、收货地址、全渠道身份绑定；
 | 项 | 值 |
 |----|-----|
 | Go module | `customercore` |
-| API | `:8096`（compose 宿主机映射见 deploy，当前为 `8099`） |
-| Web | 开发 `:5181` / 部署 `:5183` |
+| API | `:8099` |
+| Web | `:5183` |
 | Docker 镜像 | `customercore-api`、`customercore-web` |
 | UserCore app | `customercore`（`customer:read` / `customer:write`） |
+| 端口约定 | [deploy/docs/PORTS.md](../deploy/docs/PORTS.md) |
 | 平台编排 | `/home/asialeaf/projects/deploy` |
 
 ## 本地开发
